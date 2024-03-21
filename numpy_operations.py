@@ -43,3 +43,27 @@ print("arr3", arr3)
 print("arr4", arr4)
 print("arr5", arr5)
 print("arr6", arr6)
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    # Creating a np array
+    npArr = np.array([1, 3, 5])
+    npArr2 = np.array([[1, 2], [3, 4], [5, 6]])
+
+    # Array Attributes
+    print(npArr2.shape)
+    print(npArr.size)
+    print(npArr2.itemsize)
+    print(npArr2.dtype)
+
+    # Array operation
+    arr3 = npArr * 5
+    arr4 = npArr + 2
+    arr5 = npArr + np.array([1, 3, 5])
+    arr6 = np.sin(npArr)
+
+    print("arr3", arr3)
+    print("arr4", arr4)
+    print("arr5", arr5)
+    print("arr6", arr6)
