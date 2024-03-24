@@ -55,7 +55,16 @@ def exercise2():
     print("3 x 3 matrix", np.arange(9).reshape(3, 3))
     array_2D = np.identity(5) * 4
     print("array_2d", array_2D)
-    print("random", np.random.normal(0, 1))
+    print("random", np.random.normal(0, 1, 15))
+    arr34 = np.arange(12).reshape(3, 4)
+    print('first last others',arr34, arr34[0][1:-1])
+    # for x in arr34.flat:
+    #     print('x', x)
+
+    lin = np.linspace(5, 50, 10, dtype=int)
+    arrArg = np.arange(5, 51, 5)
+    print("linspace", lin, arrArg)
+    print("Join", np.concatenate([arr34, arr34]))
 
 
 if __name__ == '__main__':
